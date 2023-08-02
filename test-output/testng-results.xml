@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-02T17:16:45 GMT+07:00" name="Default suite" finished-at="2023-08-02T17:17:02 GMT+07:00" duration-ms="16862">
+    <groups>
+    </groups>
+    <test started-at="2023-08-02T17:16:45 GMT+07:00" name="Default test" finished-at="2023-08-02T17:17:02 GMT+07:00" duration-ms="16862">
+      <class name="automation.testsuite.ProjectTest_Day20">
+        <test-method is-config="true" signature="openSystemUnderTest()[pri:0, instance:automation.testsuite.ProjectTest_Day20@7ce026d3]" started-at="2023-08-02T17:16:45 GMT+07:00" name="openSystemUnderTest" finished-at="2023-08-02T17:16:51 GMT+07:00" duration-ms="5810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSystemUnderTest -->
+        <test-method signature="AddProjectSuccessFully()[pri:0, instance:automation.testsuite.ProjectTest_Day20@7ce026d3]" started-at="2023-08-02T17:16:51 GMT+07:00" name="AddProjectSuccessFully" finished-at="2023-08-02T17:17:02 GMT+07:00" duration-ms="10893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProjectSuccessFully -->
+        <test-method is-config="true" signature="closeBrowserTest()[pri:0, instance:automation.testsuite.ProjectTest_Day20@7ce026d3]" started-at="2023-08-02T17:17:02 GMT+07:00" name="closeBrowserTest" finished-at="2023-08-02T17:17:02 GMT+07:00" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserTest -->
+      </class> <!-- automation.testsuite.ProjectTest_Day20 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
