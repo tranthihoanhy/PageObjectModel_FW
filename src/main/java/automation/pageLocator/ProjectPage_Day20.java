@@ -1,5 +1,6 @@
 package automation.pageLocator;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import automation.common.CommonBase;
 
@@ -14,12 +15,9 @@ public class ProjectPage_Day20 extends CommonBase{
 	private By startDay=By.xpath("//td[@class='day' and text()='1']");
 	private By enddate = By.id("deadline");
 	private By deadlineDay=By.xpath("//td[@class='day' and text()='31']");
+	// Tìm đến xPath của input có attribute là autocomplete
+	private By projectLabelTextBox = By.xpath("(//div[@class=' col-md-9']//input[contains(@id,'s2id_autogen')])[4]");
 	
-	private By labelText = By.xpath("(//div[@class=' col-md-9']//input[contains(@id,'s2id_autogen')])[5]");
-	/*
-	 *  driver.findElement(By.name("fromLocation")).sendKeys("Mandaluyong");
-        driver.findElement(By.name("fromLocation")).sendKeys(Keys.TAB);
-	 */
 	private By btnSaveAndContinue = By.id("save-and-continue-button");
 	private By dropdownMember = By.id("s2id_user_id");
 	private By memberOption = By.xpath("//ul[@class='select2-results' and @role ='listbox']//li[2]");
@@ -41,6 +39,10 @@ public class ProjectPage_Day20 extends CommonBase{
 		click(startDay);
 		click(enddate);
 		click(deadlineDay);
+		// Chọn giá trị là Urgent trong autocomplete input field
+		type(projectLabelTextBox,"Urgent");
+		driver.findElement(projectLabelTextBox).sendKeys(Keys.TAB);
+		
 		click(btnSaveAndContinue);	
 		click(dropdownMember);
 		click(memberOption);

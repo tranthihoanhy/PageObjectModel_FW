@@ -3,7 +3,6 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
       <class name="automation.testsuite.ProjectTest_Day20">
         <methods>
           <include name="closeBrowserTest"/>
@@ -11,15 +10,6 @@
           <include name="AddProjectSuccessFully"/>
         </methods>
       </class> <!-- automation.testsuite.ProjectTest_Day20 -->
-=======
-      <class name="automation.testsuite.LoginTest">
-        <methods>
-          <include name="closeChromeBrowser"/>
-          <include name="openChromeDriver"/>
-          <include name="loginSuccessfully"/>
-        </methods>
-      </class> <!-- automation.testsuite.LoginTest -->
->>>>>>> c51a1fb50f2ab3290a2f638498353d84c3e4c8df
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

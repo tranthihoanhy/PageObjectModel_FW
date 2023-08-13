@@ -26,7 +26,8 @@ public class LoginTest extends CommonBase{
 	  LoginPage login = new LoginPage(driver);
 	  login.Login("admin@demo.com", "riseDemo");
 	  // Kiểm tra text của trang Dashboard được hiển thị sau khi đăng nhập thành công
-	WebElement titleDashboard = driver.findElement(DashboardPage.textDashboard);
+	  DashboardPage dashBoard = new DashboardPage(driver);
+	WebElement titleDashboard = driver.findElement(dashBoard.textDashboard);
 	assertTrue(titleDashboard.isDisplayed());
   }
   

@@ -66,6 +66,12 @@ public class CommonBase {
 		WebElement element = getElementPresentDOM(locator);
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
 	}
+	
+	public void scrollToPixel()
+	{
+		 JavascriptExecutor js = (JavascriptExecutor) driver;
+         js.executeScript("window.scrollBy(0,350)", "");
+	}
 
 	public void clickJavaScript(By locator) {
 		WebElement element = getElementPresentDOM(locator);
